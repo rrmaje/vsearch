@@ -1,0 +1,186 @@
+Loaded DistilmBERT model.
+Loaded SVD model.
+Combined features shape before reduction: (20, 515)
+Reduced shape: (20, 50)
+Search query executed in 0.0069 seconds.
+Search query executed in 0.0052 seconds.
+Search query executed in 0.0032 seconds.
+Search query executed in 0.0032 seconds.
+Search query executed in 0.0032 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0034 seconds.
+Search query executed in 0.0032 seconds.
+Search query executed in 0.0032 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0034 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Search query executed in 0.0031 seconds.
+Results using pgvector index:
+
+Query: ALICE Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2405
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2594
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2857
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2871
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2978
+
+Query: Alica Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2404
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2593
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2873
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2925
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2986
+
+Query: Alice Sr. Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.1363
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2749
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2810
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2893
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2922
+
+Query: Alice Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.0000
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2722
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2867
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2923
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2977
+
+Query: alice Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2358
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2671
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2704
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2904
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3070
+
+Query: Alice Jr. Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.1746
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2598
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2612
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2633
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2782
+
+Query: A. Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3672
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2560
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2766
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.3021
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3183
+
+Query: Aloce Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2886
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2492
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2759
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2939
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2967
+
+Query: Alice Smoth New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2266
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2659
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2771
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2863
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2976
+
+Query: Alice Smith New York, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.0000
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2722
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2867
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.2923
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2977
+
+Query: Alice Smith New Yirk, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3736
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2649
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2668
+  - ID: 8438, Name: Dylan Rogers, DOB: 1970-01-16, City: Phoenix, Distance: 1.2741
+  - ID: 8365, Name: Anthony Coleman, DOB: 1970-01-14, City: Little Rock, Distance: 1.2841
+
+Query: 艾丽丝 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4495
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2935
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3052
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3133
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3303
+
+Query: 艾丽丝 Jr. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4942
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2826
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2853
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3159
+  - ID: 6297, Name: Leonard Stewart, DOB: 1970-01-16, City: Shreveport, Distance: 1.3348
+
+Query: 艾. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4415
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2926
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3188
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3257
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3494
+
+Query: 艾丽丝 Sr. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.5050
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2930
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3149
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3237
+  - ID: 6297, Name: Leonard Stewart, DOB: 1970-01-16, City: Shreveport, Distance: 1.3290
+
+Query: 艾丽丝 史密斯 Sr. 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4965
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2902
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3047
+  - ID: 6297, Name: Leonard Stewart, DOB: 1970-01-16, City: Shreveport, Distance: 1.3227
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3247
+
+Query: 艾丽丝 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4495
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2935
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3052
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3133
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3303
+
+Query: 艾丽丝 史. 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.5414
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3196
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3318
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3515
+  - ID: 6297, Name: Leonard Stewart, DOB: 1970-01-16, City: Shreveport, Distance: 1.3551
+
+Query: 艾丽丝 史密斯 Jr. 纽约, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4842
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.2783
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.2804
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.3133
+  - ID: 6297, Name: Leonard Stewart, DOB: 1970-01-16, City: Shreveport, Distance: 1.3293
+
+Query: 艾丽丝 史密斯 纽约 City, DOB: 1970-01-15
+Matches:
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4810
+  - ID: 9192, Name: Carl Morgan, DOB: 1971-01-15, City: Oklahoma City, Distance: 1.2858
+  - ID: 3372, Name: Luis Scott, DOB: 1970-01-16, City: Oklahoma City, Distance: 1.3045
+  - ID: 2246, Name: Miguel Wright, DOB: 1970-01-16, City: Tucson, Distance: 1.3368
+  - ID: 6041, Name: John Butler, DOB: 1971-01-15, City: Shreveport, Distance: 1.3676
+
