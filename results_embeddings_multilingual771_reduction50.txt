@@ -1,0 +1,171 @@
+Loaded DistilmBERT model.
+Loaded existing FAISS index from file. Index total: 10000
+Loaded SVD model.
+Combined features shape before reduction: (20, 515)
+Reduced shape: (20, 50)
+Index dimensions: 50
+Query vectors dimensions: 50
+Search time: 0.0002 seconds
+Results using FAISS HNSW index:
+
+Query: ALICE Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0607
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.5990
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6547
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6596
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6898
+
+Query: Alica Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0596
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.5951
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6571
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6772
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6953
+
+Query: Alice Sr. Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0167
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6218
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6480
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6597
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.6752
+
+Query: Alice Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0000
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6242
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6572
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6732
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.6853
+
+Query: alice Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0584
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6146
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6175
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6705
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7172
+
+Query: Alice Jr. Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0282
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.5849
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.5870
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.5906
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6376
+
+Query: A. Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.1382
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.5773
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6407
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6998
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7469
+
+Query: Aloce Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0862
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.5741
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6296
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6857
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6859
+
+Query: Alice Smoth New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0593
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6216
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6500
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6591
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.6864
+
+Query: Alice Smith New York, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.0000
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6242
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6572
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.6732
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.6853
+
+Query: Alice Smith New Yirk, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.1379
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6059
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6072
+  - Index: 8437, Name: Dylan Rogers Phoenix, DOB: 1970-01-16, Distance: 1.6317
+  - Index: 8364, Name: Anthony Coleman Little Rock, DOB: 1970-01-14, Distance: 1.6508
+
+Query: 艾丽丝 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2011
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6711
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7010
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7293
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7760
+
+Query: 艾丽丝 Jr. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2464
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6451
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6535
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7311
+  - Index: 6296, Name: Leonard Stewart Shreveport, DOB: 1970-01-16, Distance: 1.7957
+
+Query: 艾. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.1945
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6700
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7370
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7521
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.8211
+
+Query: 艾丽丝 Sr. 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2558
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6696
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7353
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7523
+  - Index: 6296, Name: Leonard Stewart Shreveport, DOB: 1970-01-16, Distance: 1.7833
+
+Query: 艾丽丝 史密斯 Sr. 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2480
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6615
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7113
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7564
+  - Index: 6296, Name: Leonard Stewart Shreveport, DOB: 1970-01-16, Distance: 1.7702
+
+Query: 艾丽丝 史密斯 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2011
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6711
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7010
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7293
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7760
+
+Query: 艾丽丝 史. 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2912
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.7484
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7832
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.8268
+  - Index: 6296, Name: Leonard Stewart Shreveport, DOB: 1970-01-16, Distance: 1.8549
+
+Query: 艾丽丝 史密斯 Jr. 纽约, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2374
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.6387
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.6390
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.7262
+  - Index: 6296, Name: Leonard Stewart Shreveport, DOB: 1970-01-16, Distance: 1.7855
+
+Query: 艾丽丝 史密斯 纽约 City, DOB: 1970-01-15
+Matches:
+  - Index: 0, Name: Alice Smith New York, DOB: 1970-01-15, Distance: 0.2254
+  - Index: 9191, Name: Carl Morgan Oklahoma City, DOB: 1971-01-15, Distance: 1.6437
+  - Index: 3371, Name: Luis Scott Oklahoma City, DOB: 1970-01-16, Distance: 1.7039
+  - Index: 2245, Name: Miguel Wright Tucson, DOB: 1970-01-16, Distance: 1.7783
+  - Index: 6040, Name: John Butler Shreveport, DOB: 1971-01-15, Distance: 1.8702
+
+FAISS HNSW index search time: 0.0002 seconds
