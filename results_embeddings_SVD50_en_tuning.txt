@@ -2,83 +2,80 @@ Loaded DistilmBERT model.
 Loaded SVD model.
 Combined features shape before reduction: (17, 515)
 Reduced shape: (17, 50)
-Search query executed in 0.0054 seconds.
-Search query executed in 0.0034 seconds.
+Search query executed in 0.0052 seconds.
+Search query executed in 0.0033 seconds.
 Search query executed in 0.0031 seconds.
-Search query executed in 0.0032 seconds.
-Search query executed in 0.0032 seconds.
-Search query executed in 0.0032 seconds.
+Search query executed in 0.0030 seconds.
 Search query executed in 0.0031 seconds.
+Search query executed in 0.0033 seconds.
 Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
-Search query executed in 0.0031 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0033 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
+Search query executed in 0.0030 seconds.
 Search query executed in 0.0031 seconds.
 
-Stopping early as perfect recall@1 is achieved at threshold 0.49
+Stopping early as perfect recall@1 is achieved at threshold 0.26
 
-Best Threshold: 0.49, Best Recall@1: 1.0000
-No results retrieved for query: Pandas(Index=12, first_name='Alice', last_name='Smith', birth_year=1970, birth_month=1, birth_day=16, city_of_birth='New Yirk', combined_names='Alice Smith New Yirk')
-No results retrieved for query: Pandas(Index=13, first_name='Alexia', last_name='Smoth', birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alexia Smoth New York')
-False Positive Detected (out of bounds): (1, 'Alice', 'Smith', 1970, 1, 15, 'New York', 0.4834276132737779) for query: Pandas(Index=14, first_name='Alexandra', last_name='Smith', birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alexandra Smith New York')
-No results retrieved for query: Pandas(Index=15, first_name='Alice', last_name=nan, birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alice New York')
-No results retrieved for query: Pandas(Index=16, first_name='Alice', last_name='Smith', birth_year=0, birth_month=0, birth_day=0, city_of_birth='New York', combined_names='Alice New York')
-Total Queries: 17, Total Retrieved: 13, Correct Matches: 12
-Precision at threshold 0.49000000000000027: 0.9230769230769231
+Best Threshold: 0.26, Best Recall@1: 1.0000
+No results retrieved for query: Pandas(Index=11, first_name='Alice', last_name='Smith', birth_year=1970, birth_month=1, birth_day=16, city_of_birth='New Yirk', combined_names='Alice Smith New Yirk')
+No results retrieved for query: Pandas(Index=12, first_name='Alexia', last_name='Smoth', birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alexia Smoth New York')
+No results retrieved for query: Pandas(Index=13, first_name='Alexandra', last_name='Smith', birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alexandra Smith New York')
+No results retrieved for query: Pandas(Index=14, first_name='Alice', last_name=nan, birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='Alice New York')
+No results retrieved for query: Pandas(Index=15, first_name='Alice', last_name='Smith', birth_year=0, birth_month=0, birth_day=0, city_of_birth='New York', combined_names='Alice Smith New York')
+No results retrieved for query: Pandas(Index=16, first_name='A.', last_name='Smith', birth_year=1970, birth_month=1, birth_day=15, city_of_birth='New York', combined_names='A. Smith New York')
+Total Queries: 17, Total Retrieved: 11, Correct Matches: 11
+Precision at threshold 0.26000000000000006: 1.0
 Results using pgvector index:
 
 Query: ALICE Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3680
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2058
 
 Query: Alica Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3812
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2142
 
 Query: Alice Sr. Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3307
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.0888
 
 Query: Alice Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3390
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.0000
 
 Query: alice Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3756
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.1998
 
 Query: Alice Jr. Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3440
-
-Query: A. Smith New York, DOB: 1970-01-15
-Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4622
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.1340
 
 Query: Aloce Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3962
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2217
 
 Query: Alice Smoth New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4057
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2059
 
 Query: Alice Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3390
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.0000
 
 Query: Alice Smith New Yirk, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4852
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.2512
 
 Query: Alice Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.3390
+  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.1595
 
 Query: Alice Smith New Yirk, DOB: 1970-01-16
 Matches:
@@ -88,11 +85,13 @@ Matches:
 
 Query: Alexandra Smith New York, DOB: 1970-01-15
 Matches:
-  - ID: 1, Name: Alice Smith, DOB: 1970-01-15, City: New York, Distance: 0.4834
 
 Query: Alice New York, DOB: 1970-01-15
 Matches:
 
-Query: Alice New York, DOB: 0-00-00
+Query: Alice Smith New York, DOB: 0-00-00
+Matches:
+
+Query: A. Smith New York, DOB: 1970-01-15
 Matches:
 
